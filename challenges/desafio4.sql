@@ -1,9 +1,8 @@
 SELECT 
     (u.user_name) AS pessoa_usuaria,
-    CASE
-        WHEN YEAR(MAX(uh.played_timestamp)) >= 2021 THEN 'Ativa'
-        WHEN YEAR(MAX(uh.played_timestamp)) < 2021 THEN 'Inativa'
-    END AS status_pessoa_usuaria
+    IF(YEAR(MAX(uh.played_timestamp)) >= 2021,
+        'Ativa',
+        'Inativa') AS status_pessoa_usuaria
 FROM
     `user` u
         INNER JOIN
