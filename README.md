@@ -37,6 +37,11 @@ Para tanto foi utilizado código de cores, de modo a facilitar a visualização 
 ![Tabela normalizada "Spotify Clone"](./images/normalized-table.png)
 
 ___
+### 📈 Diagrama Entidade Relacionamento
+
+![ER Diagram "Spotify Clone"](./images/ER-DIAGRAM.png)
+
+___
 # 🏁 Desafios Cumpridos
 
 Após a normalização e modelagem do banco de dados, foi criada uma `QUERY` para cada desafio proposto, conforme melhor explicitado nos comentários dos arquivos `.sql` da pasta `challenges`.
